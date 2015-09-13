@@ -39,6 +39,17 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
 
+        // Adding a third Student, myself!
+        $third = new Student();
+        $third->surname = "Yiu";
+        $third->first_name = "Julia";
+        $third->add_email('home', 'jyiu93@gmail.com');
+        $third->add_email('work', 'jyiu8@my.bcit.ca');
+        $third->add_grade(90);
+        $third->add_grade(75);
+        $third->add_grade(90);
+        $students['a009'] = $third;
+
         // A sort function that sorts an array by key. In this case, it is
         // sorting the Students array.
         ksort($students);
