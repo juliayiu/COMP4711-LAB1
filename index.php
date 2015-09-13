@@ -39,6 +39,10 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
 
+        // A sort function that sorts an array by key. In this case, it is
+        // sorting the Students array.
+        ksort($students);
+
         // A for-each loop that prints out each student entered 
         // in the array of students
         foreach ($students as $student)
